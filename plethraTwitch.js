@@ -13,8 +13,10 @@ if(dM === false){
 function setup() {
   
   
-  if(dM === true || dM.toLowerCase() === 'dark'){
-    dM = 'dark'
+  if(dM !== false){
+    if(dM === true || dM.toLowerCase() === 'dark'){
+      dM = 'dark'
+    }
   }else{
     dM = 'light'
   }
