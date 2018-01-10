@@ -6,7 +6,7 @@ if(streamers != false){
  streamers = []; 
 }
 var dM = getQueryVariable('theme');
-if(dM.toLowerCase === false){
+if(dM.toLowerCase() === false){
   dM = confirm('Dark Mode? (press ok to chose dark mode press cancel for light mode)');
 }
 
