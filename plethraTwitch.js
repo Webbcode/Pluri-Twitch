@@ -45,6 +45,7 @@ function setup() {
         });
       }
     }
+    confirm('The link for this layout is https://webbcode.github.io/Pluri-Twitch/?streamers=' + streamers.join(',') + '&theme=' + dM);
   }else{
     for (var i = 0; i < streamers.length;i++){
         var div = createDiv('').id('twitch-embed' + i);
@@ -57,7 +58,7 @@ function setup() {
         });
       }
   }
-  confirm('The link for this layout is https://webbcode.github.io/Pluri-Twitch/?streamers=' + streamers.join(',') + '&theme=' + dM);
+  
   resizeCanvas(0, 0);
   
   if(dM === 'dark'){
