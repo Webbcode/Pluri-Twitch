@@ -23,6 +23,10 @@ function setup() {
     dM = 'light'
   }
   
+  if(dM === 'dark'){
+    document.body.style = 'background: rgb(0, 0, 0);'
+  }
+  
   if(streamers.length === 0){
     var streamNum = int(prompt('how many streamers to watch?', '3'))
     if(streamNum != null){
@@ -63,10 +67,6 @@ function setup() {
   }
   
   resizeCanvas(0, 0);
-  
-  if(dM === 'dark'){
-    document.body.style = 'background: rgb(0, 0, 0);'
-  }
 }
 
 function draw() {
