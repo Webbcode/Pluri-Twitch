@@ -16,6 +16,8 @@ function setup() {
   if(dM !== false){
     if(dM === true || dM.toLowerCase() === 'dark'){
       dM = 'dark'
+    }else{
+      dM = 'light'
     }
   }else{
     dM = 'light'
@@ -34,6 +36,8 @@ function setup() {
         }
       }
       
+      confirm('The link for this layout is https://webbcode.github.io/Pluri-Twitch/?streamers=' + streamers.join(',') + '&theme=' + dM);
+      
       for (var i = 0; i < streamers.length;i++){
         var div = createDiv('').id('twitch-embed' + i);
         div.style('width', 100 / streamers.length + '%');
@@ -45,7 +49,6 @@ function setup() {
         });
       }
     }
-    confirm('The link for this layout is https://webbcode.github.io/Pluri-Twitch/?streamers=' + streamers.join(',') + '&theme=' + dM);
   }else{
     for (var i = 0; i < streamers.length;i++){
         var div = createDiv('').id('twitch-embed' + i);
