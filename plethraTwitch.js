@@ -3,7 +3,7 @@ var exampleStreamers = ['Th3BetaCat', 'DivineMorality', 'StaticP']
 if(streamers != false){
   streamers = eval("[\'" + streamers.replace(/\\/gi, '\',\'').replace(/,/gi, '\',\'') + "\']");
 }else{
- streamers = []; 
+  streamers = []; 
 }
 var dM = getQueryVariable('theme');
 if(dM === false){
@@ -11,8 +11,6 @@ if(dM === false){
 }
 
 function setup() {
-  
-  
   if(dM !== false){
     if(dM === true || dM.toLowerCase() === 'dark'){
       dM = 'dark'
@@ -30,6 +28,7 @@ function setup() {
   if(streamers.length === 0){
     var streamNum = int(prompt('how many streamers to watch?', '3'))
     if(streamNum != null){
+      
       for (var i = 0; i < streamNum;i++){
         var toPush = prompt('which will be streamer number ' + (i + 1) + '?', 'ex: ' + exampleStreamers[i % exampleStreamers.length]);
         if(toPush != null){
@@ -65,19 +64,17 @@ function setup() {
         });
       }
   }
-  
   resizeCanvas(0, 0);
 }
 
-function draw() {
+function draw(){
   
 }
 
-function getQueryVariable(variable)
-{
+function getQueryVariable(variable){
        var query = window.location.search.substring(1);
        var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
+       for (var i=0;i<vars.length;i++){
                var pair = vars[i].split("=");
                if(pair[0] == variable){return pair[1];}
        }
