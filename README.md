@@ -1,1 +1,2 @@
 # Pluri-Twitch
+During a stream I was watching there were a few problems with the websites that allowed you to view multiple Twitch streams at the same time. The main problem was that there was no way to view two streams at the same time, so I threw this together in a couple of minutes with a little bit of reaserch. You can watch two or more streams side by side on the same screen easily if you go [here](https://webbcode.github.io/Pluri-Twitch/).
